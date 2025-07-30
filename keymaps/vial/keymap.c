@@ -64,6 +64,17 @@ enum custom_keycodes {
 
 };
 
+#define KC_PINK LED_PINK
+#define KC_GREE LED_GREEN
+#define KC_BLUE LED_BLUE
+#define KC_WHIT LED_WHITE
+#define KC_PURP LED_PURPLE
+#define KC_RED LED_RED
+#define KC_YELL LED_YELLOW
+#define KC_ORAN LED_ORANGE
+#define KC_CYAN LED_CYAN
+#define KC_MAGE LED_MAGENTA
+#define KC_GRAY LED_GRAY
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -81,33 +92,33 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_default] = LAYOUT(
         KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,
         KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,
-        KC_ESC,   OSL(1),   KC_MUTE,            
+        MO(5),    MO(5),    KC_ENT,            
         KC_NO,    KC_NO,    KC_NO
     ),
     [_lower] = LAYOUT(
-        KC_1,         KC_2,     KC_3,     KC_4,     KC_5,
-        KC_6,         KC_7,     KC_8,     KC_9,     KC_0,
-        S(KC_TAB),    KC_TAB,   KC_ESC,             
+        KC_P1,         KC_P2,     KC_P3,     KC_P4,     KC_P5,
+        KC_P6,         KC_P7,     KC_P8,     KC_P9,     KC_P0,
+        KC_PMNS,      KC_ENT,   KC_PDOT,             
         KC_NO,        KC_NO,    KC_NO
    ),
     [_raise] = LAYOUT(
         KC_LCTL,  KC_SPC,   KC_LALT,   KC_ENT,      KC_BSPC,
         KC_LSFT,  KC_F11,   KC_F12,    S(KC_TAB),   KC_TAB,
-        KC_BTN3,  KC_BTN3,  KC_ESC,                 
+        KC_BTN3,  KC_BTN3,  KC_MUTE,                 
         KC_NO,    KC_NO,    KC_NO
    ),
     [_upper] = LAYOUT(
-	KC_LCTL,    KC_SPC,   KC_LALT,   KC_ENT,      KC_BSPC,
-        KC_LSFT,    KC_F11,   KC_F12,    S(KC_TAB),   KC_TAB,
-        LSG(KC_4),  KC_DEL,   KC_ESC,                 
-        KC_NO,      KC_NO,    KC_NO
+	KC_KP_1,     KC_KP_2,   KC_KP_3,   KC_KP_4,     KC_KP_5,
+        KC_KP_6,     KC_KP_7,   KC_KP_8,   KC_KP_9,     KC_KP_0,
+        KC_KP_EQUAL, KC_ENTER,  TO(4),                 
+        KC_NO,       KC_NO,     KC_NO
 
      ),
 
     [_df_m] = LAYOUT(
-        KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,
-        KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,
-        KC_NO,    KC_NO,    KC_NO,              
+        KC_PINK,  KC_GREE,  KC_BLUE,  KC_WHIT,  KC_PURP,
+        KC_RED,   KC_YELL,  KC_ORAN,  KC_CYAN,  KC_GRAY,
+        KC_NO,    KC_NUM,   RGB_TOG,              
         KC_NO,    KC_NO,    KC_NO
     ),
     
@@ -196,12 +207,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #if defined(ENCODER_MAP_ENABLE)
 
  const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
-     [0] = {ENCODER_CCW_CW(RCS(KC_TAB), LCTL(KC_TAB)),  ENCODER_CCW_CW(KC_WH_U, KC_WH_D),                      ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
-     [1] = {ENCODER_CCW_CW(KC_LEFT, KC_RGHT),           ENCODER_CCW_CW(KC_UP, KC_DOWN),                        ENCODER_CCW_CW(KC_WH_U, KC_WH_D)},
-     [2] = {ENCODER_CCW_CW(KC_MS_L, KC_MS_R),           ENCODER_CCW_CW(KC_MS_UP, KC_MS_DOWN),                  ENCODER_CCW_CW(KC_WH_U, KC_WH_D)},
-     [3] = {ENCODER_CCW_CW(RCS(KC_TAB), LCTL(KC_TAB)),  ENCODER_CCW_CW(KC_WH_U, KC_WH_D),                      ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
-     [4] = {ENCODER_CCW_CW(RCS(KC_TAB), LCTL(KC_TAB)),  ENCODER_CCW_CW(KC_UP, KC_DOWN),                        ENCODER_CCW_CW(KC_WH_U, KC_WH_D)},
-     [5] = {ENCODER_CCW_CW(KC_LEFT, KC_RGHT),           ENCODER_CCW_CW(SGUI(KC_3), SGUI(KC_4)),                ENCODER_CCW_CW(KC_WH_U, KC_WH_D)},
+     [0] = {ENCODER_CCW_CW(KC_DOWN, KC_UP),             ENCODER_CCW_CW(KC_WH_D, KC_WH_U),                      ENCODER_CCW_CW(C(KC_LEFT), C(KC_RIGHT))},
+     [1] = {ENCODER_CCW_CW(LSFT(KC_TAB), KC_TAB),       ENCODER_CCW_CW(KC_LEFT, KC_RIGHT),                     ENCODER_CCW_CW(KC_BSPC, KC_DEL)},
+     [2] = {ENCODER_CCW_CW(KC_MS_L, KC_MS_R),           ENCODER_CCW_CW(KC_MS_UP, KC_MS_DOWN),                  ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
+     [3] = {ENCODER_CCW_CW(KC_KP_MINUS, KC_KP_PLUS),    ENCODER_CCW_CW(KC_KP_SLASH, KC_KP_ASTERISK),           ENCODER_CCW_CW(KC_BSPC, KC_DELETE)},
+     [4] = {ENCODER_CCW_CW(RGB_VAD, RGB_VAI),           ENCODER_CCW_CW(RGB_SPD, RGB_SPI),                      ENCODER_CCW_CW(RGB_RMOD,RGB_MOD)},
+     [5] = {ENCODER_CCW_CW(C(KC_LEFT), C(KC_RGHT)),     ENCODER_CCW_CW(RCS(KC_TAB), C(KC_TAB)),                ENCODER_CCW_CW(KC_WH_D, KC_WH_U)},
      [6] = {ENCODER_CCW_CW(KC_MS_L, KC_MS_R),           ENCODER_CCW_CW(KC_MS_UP, KC_MS_DOWN),                  ENCODER_CCW_CW(KC_WH_U, KC_WH_D)},
      [7] = {ENCODER_CCW_CW(KC_WH_L, KC_WH_R),           ENCODER_CCW_CW(KC_WH_U, KC_WH_D),                      ENCODER_CCW_CW(LCTL(KC_KP_MINUS), LCTL(KC_KP_EQUAL))}
      /* [8] = {ENCODER_CCW_CW(KC_MS_L, KC_MS_R),           ENCODER_CCW_CW(KC_MS_UP, KC_MS_DOWN),                  ENCODER_CCW_CW(KC_WH_U, KC_WH_D)}, */

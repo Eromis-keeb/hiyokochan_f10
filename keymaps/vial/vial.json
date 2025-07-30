@@ -16,47 +16,58 @@
 
   "customKeycodes": [
   	  { "name": "LED_PINK",
-            "title": "Set PINK"
+            "title": "Set PINK",
+	    "shortName": "PINK"
           },
 
-   	 { "name": "LED_GREEN",
-  	   "title": "Set GREEN"
+   	 { "name": "LED_GREE",
+  	   "title": "Set GREEN",
+	    "shortName": "GREE"
    	 },
 
    	 { "name": "LED_BLUE",
-  	   "title": "Set BLUE"
+  	   "title": "Set BLUE",
+	    "shortName": "BLUE"
    	 },
 	 
-	 { "name": "LED_WHITE",
-  	   "title": "Set WHITE"
+	 { "name": "LED_WHIT",
+  	   "title": "Set WHITE",
+	    "shortName": "WHIT"
    	 },
 
-	 { "name": "LED_PURPLE",
-  	   "title": "Set PURPLE"
+	 { "name": "LED_PURP",
+  	   "title": "Set PURPLE",
+	    "shortName": "PURP"
    	 },
 	
 	 { "name": "LED_RED",
-  	   "title": "Set RED"
+  	   "title": "Set RED",
+	    "shortName": "RED"
    	 },
 
-	 { "name": "LED_YELLOW",
-  	   "title": "Set YELLOW"
+	 { "name": "LED_YELL",
+  	   "title": "Set YELLOW",
+	    "shortName": "YELL"
    	 }, 
 	 
-	 { "name": "LED_ORANGE",
-  	   "title": "Set ORANGE"
+	 { "name": "LED_ORAN",
+  	   "title": "Set ORANGE",
+	    "shortName": "ORAN"
    	 },
 	 
 	 { "name": "LED_CYAN",
-  	   "title": "Set CYAN"
+  	   "title": "Set CYAN",
+	    "shortName": "CYAN"
    	 },
 
-	 { "name": "LED_MAGENTA",
-  	   "title": "Set MAGENTA"
+	 { "name": "LED_MAGE",
+  	   "title": "Set MAGENTA",
+	    "shortName": "MAGE"
    	 },
 
 	 { "name": "LED_GRAY",
-  	   "title": "Set GRAY"
+  	   "title": "Set GRAY",
+	    "shortName": "GRAY"
    	 }
 
 
