@@ -28,7 +28,7 @@ vialのソフトウェアから自由にキーマップを変更可能です。 
 <br/>
 本キットには基板完成済みの通常版と基板の組み立てが必要なチャレンジキットがあります。<br/>
 →こちら<br/>
-https://github.com/Eromis-keeb/hiyokochan_f10_wakamurasaki/blob/ac473d99715d367bfb3ebd06d90718eca4af67bc/README.md <br/>
+https://github.com/Eromis-keeb/hiyokochan_f10_yuugao/blob/96729be33fa84a89dce132d664b9896cdbfeecd1/README.md <br/>
 通常版の場合も最初から最後まで読むことである程度仕組みが解るので読んで頂いたほうが良いと思います。<br/>
 カスタムプレートを使用する場合もチャレンジキット用のビルドガイドの最後にカスタムガイドがあります。<br/>
 
