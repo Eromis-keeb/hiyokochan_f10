@@ -20,7 +20,7 @@ vialのソフトウェアから自由にキーマップを変更可能です。
 通常版を購入された場合は８のケースの組み立てまで飛ばして組み立ててください。<br/>
 もしくは下記リンクより通常版用ビルドガイドを参照してください。<br/>
 →通常版用ビルドガイドはこちら <br/>
-https://github.com/Eromis-keeb/yuugiri/blob/d6145a8e0a431de6ed0315012fdd51fe3665d1de/readme2.md<br/>
+https://github.com/Eromis-keeb/hiyokochan_f10_yuugao/blob/48573aa722f179668397002c535dd332db8f2ff4/readme2.md <br/>
 <br/>
 通常版の場合も最初から最後まで読むことである程度仕組みが解るので読んで頂いたほうが良いと思います。<br/>
 
