@@ -65,6 +65,13 @@ AZ1UBALLについてはパレットシステム様よりご購入願います。
 写真でマイコンが既に付いているものがありますが、組み立て上確認しながらやりたい場合は先にマイコンのはんだ付けをしてから作業すると確実になります。<br/>
 但し、はんだ付けに慣れていない場合は、マイコンを付けた状態でLEDやSMDダイオードなど細かい部品は取り付け辛い場合があるため、ここではマイコンを付けない状態を前提として説明をしていきます。<br/>
 
+## 組み立て
+
+LED→SMDダイオード→スイッチソケットの順ではんだ付けします。<br/>
+<br/>
+<br/>
+<br/>
+
 ![IMG_5639](https://github.com/user-attachments/assets/3f2c1ec7-6dbe-49a3-aedd-8af592dcd8de)
 LED→SMDダイオード→スイッチソケットの順ではんだ付けします。<br/>
 <br/>
@@ -128,19 +135,34 @@ LED→SMDダイオード→スイッチソケットの順ではんだ付けし�
 <br/>
 基板裏面のLED1-LED14の部分にLED本体をはんだ付けしていきます。<br/>
 
-![IMG_6985](https://github.com/user-attachments/assets/fb3317a1-f6a9-45b3-9ced-8fe0db84e212)
+![D1438AEC-C123-4EE8-AD9F-28B62AF59C18_1_105_c](https://github.com/user-attachments/assets/b01ce70b-26af-452e-b86c-6f833be12e88)  
+
+
+LEDはGnd表記のある右上の位置とLED本体の先が欠けている部分を合わせるように設置し、表面のLight Sideに光る面が向くようになっているか確認の上ではんだ付けしてください。  
+
+
+![4C1DD246-D908-45A1-B441-B565A9225C9D_1_201_a](https://github.com/user-attachments/assets/abda2830-7115-4a42-a6bf-e7282904eb4c)\
+赤丸の部分の欠けている部分と・・<br/>
 <br/>
 <br/>
-赤枠部分Gndの表記の部分にこれまでの要領と同じに予備はんだをしていきます。
-![IMG_6986](https://github.com/user-attachments/assets/cfc7f62b-657e-446c-8aac-ce780027e952)
+![1E685349-B94A-4480-B06B-1E09D8CD7234_1_105_c](https://github.com/user-attachments/assets/e235d5ff-dd6e-4c39-9e30-6a863a82a41b)\
+緑枠のGND表記の欠けたような印刷の部分が合うように配置します。
+\
+\
+\
+![121CD3D2-01D2-4998-93F1-4753CA7DBC22_1_105_c](https://github.com/user-attachments/assets/82a876e2-4903-47f9-bf64-5f3033610344)<br/>
+私はGnd位置のパッドに予備はんだをしてそこを先につけていく事で向き間違いを防止しています。<br/>
 <br/>
 <br/>
-LED本体オレンジ枠のように切り欠きの部分と予備はんだをしたGndの部分を合わせるようにLEDを設置します。
-![IMG_6987](https://github.com/user-attachments/assets/92e451f6-9ef9-4ca4-97b9-82680681c663)
+![AACD6369-66F6-41BE-AA8A-B672B2ACE389_1_105_c](https://github.com/user-attachments/assets/1d01bea9-b180-4298-98a7-03b3cce98f46)\
+LEDを置くとこのようになるはずです。<br/>
 <br/>
 <br/>
-設置をするとこのようになります。
-![IMG_6988](https://github.com/user-attachments/assets/8cbd83dc-d4f7-4b57-ae28-24f5f5b7a637)
+![A0D3F910-CA83-40D4-AA16-E25D60798242_1_201_a](https://github.com/user-attachments/assets/942b001e-9ffa-49e1-a9d3-2f6d74604570)\
+表面から見るとこのように見えます。<br/>
+基板表面から見たときに欠けている部分が左上になっているのが正しい取り付け位置です。<br/>
+裏面のLED1〜LED16の順番で付けていきます。<br/>
+<br/>
 <br/>
 <br/>
 ピンセットなどでLED本体をしっかり固定し、はんだごてで予備はんだを溶かしてはんだ付けします。<br/>
@@ -148,55 +170,56 @@ LED本体オレンジ枠のように切り欠きの部分と予備はんだを�
 この際もLED本体は固定したままにし、はんだごてを離して1−2秒してから固定を解除するようにするとうまく行きます。<br/>
 水平になっていなかったりズレたまま固定してしまった場合は、慌てず少し間を置いてから再度ピンセットなどでしっかりと固定した状態ではんだを温め直して修正してください。<br/>
 <br/>
-<br/>
-
 同じ要領で全てのLEDのGnd部とLED本体の切り欠き部をはんだ付けしていきます。
-![IMG_6989](https://github.com/user-attachments/assets/4b3bf301-e07d-4d0d-8c74-0dbf4d4809e7)
 <br/>
 <br/>
-
 続けてDIｎ、DOut、VCCというように順番にはんだ付けしていきます。
 はんだごてにはんだを乗せてからパッドに当てピンの根本から滑らすようにすると綺麗にできると思います。
 長い間当てすぎないようにしましょう。1−2秒は大丈夫な気がします。
-![IMG_6991](https://github.com/user-attachments/assets/de56f8a9-e921-4349-b2f1-1f280d11ef41)
 
 <br/>
 <br/>
 
 ### 2.SMDダイオードの取り付け
-<br/>
-<br/>
-SMDダイオードをはんだ付けしていきます。<br/>
 
-SMDダイオードには図の赤枠内のように縦線が入っています。
+SMDも同じ要領ではんだ付けしていきます。<br/>
+シルク上の線の入った印刷とSMD本体の線の入った向きを合わせるようにはんだ付けしてください。
 
-![406658558-03dcead0-b42c-49c8-963d-3cf0ec3464ec](https://github.com/user-attachments/assets/c20f0e98-ccdc-44d6-b3e5-5fca8e272cee)
-<br>
-<br>
-基板緑枠内にも同じように縦線が入っている場所があります。
-![IMG_6993](https://github.com/user-attachments/assets/f7f76421-2a06-4c73-84a7-74037d2cc11e)
+![DB4F116A-F9F5-444E-9EC8-A703ECAE511F_1_105_c](https://github.com/user-attachments/assets/007c5e54-941a-493c-9743-634721ed3d44)\
+赤枠の部分がSMD（ダイオード）の取り付け部分<br/>
 <br/>
 <br/>
-予備はんだをしたら・・
-![IMG_6994](https://github.com/user-attachments/assets/5b08fded-789e-4359-ad67-5e2ae09606b3)
+![CCE193B6-B586-407E-80DA-1E26C4CD1A04_1_105_c](https://github.com/user-attachments/assets/2f34d51e-ba56-4fb3-bfbf-2a3016460cdc)\
+黄色枠の小さいダイオードを拡大すると・・・<br/>
 <br/>
 <br/>
-その縦線と、緑枠内の基板上の縦線の向きが合うようにSMDダイオードを配置します。
-![IMG_6995](https://github.com/user-attachments/assets/e4df4da0-299c-4268-bf1b-c33f2a7f1948)
+![2DDC3A83-5CEF-4921-B0FC-9FF08C35F2C3_1_201_a](https://github.com/user-attachments/assets/03dcead0-b42c-49c8-963d-3cf0ec3464ec)\
+小さい赤枠内のように縦線がある部分があり・・<br/>
 <br/>
 <br/>
-チップ抵抗の時と同じ要領で予備はんだを溶かし、SMDダイオードをスライドさせてはんだ付けします。
-![IMG_6996](https://github.com/user-attachments/assets/d39a79d9-5353-4875-be26-26d40d783d92)
+![0FC21235-EB95-45D9-B0EF-3D4A4D1A78A4_1_105_c](https://github.com/user-attachments/assets/eb1f0cc7-c559-4efe-9615-61ea2564b7fa)\
+基板側の印刷の赤枠内の縦線と向きを合わせて配置します。<br/>
+予備はんだも縦線がある方向にしておくと向きを間違いにくいです。<br/>
+<br/>
+<br/>
+![F4365F45-C6CC-42EE-AF02-16164902A7BC_1_105_c](https://github.com/user-attachments/assets/080fff23-a16a-40e8-b451-3bda3460f185)\
+緑枠内のようにはんだ付けします。<br/>
 <br/>
 <br/>
 LEDの時と同じ要領で縦線の向きに注意しながら全てのSMDダイオードの片側をはんだ付けしていきます。<br/>
-それが出来たら反対側もはんだ付けしていきます。
-![IMG_6997](https://github.com/user-attachments/assets/b4c03a3a-a197-48af-9ec3-1cb1e3cf96f7)
+それが出来たら反対側もはんだ付けしていきます。<br/>
 <br/>
 <br/>
 <br/>
 
 ### 3.スイッチソケットの取り付け
+<br/>
+これまでと同じ要領で、予備はんだ→配置→はんだ付けを行っていきます。<br/>
+スイッチソケットはパッドも大きくこれまでよりは容易に行えると思います。<br/>
+基板を横から見た時に浮きがないか確認しながらやるのが良いと思います。<br/>
+
+<br/>
+<br/>
 <br/>
 <br/>
 
@@ -230,7 +253,8 @@ MXスイッチソケットを取り付けていきます。<br/>
 片側のはんだ付けが終わったらもう片側にもはんだを流し込みスイッチソケットを固定していきます。<br/>
 この際、横側などからしっかり確認をし、ソケットが浮いていないかを確認しながら行ってください。<br/>
 
-![IMG_7080](https://github.com/user-attachments/assets/83cd8f6f-8af0-4f26-b614-8478223bffc1)<br/>
+![1C21722F-7B80-401F-A5EE-9A62B8A3226A_1_105_c](https://github.com/user-attachments/assets/24aa619d-0496-4643-a042-d86c2d6ca972)\
+はんだ付け完了予想図<br/>
 <br/>
 <br/>
 <br/>
@@ -346,20 +370,30 @@ Millmaxを１つのロータリーエンコーダーに対して５つ、３つ�
 #### 5-2.ロータリーエンコーダー本体の取り付け
 <br/>
 <br/>
+<br/>
 
 ロータリーエンコーダー本体を取り付けていきます。<br/>
+![06956E3E-A658-4070-9BC7-98FC12AD50D9_1_105_c](https://github.com/user-attachments/assets/876b67ed-1121-4759-beec-994c50483507) <br/>
+青枠の部分にEC12互換のロータリーエンコーダーを基板裏面からはんだ付けしてください。<br/>
+<br/>
+<br/>
+
+![FDE5BDB6-5C1F-4694-B0D7-9129F3B9C376_1_105_c](https://github.com/user-attachments/assets/c78740a1-4c88-4b3e-a1a9-2385eae2639b) <br/>
+その際、写真赤枠部分のツメをある程度広げてから取り付けると楽に出来ます。<br/>
 穴の位置に合うように足を多少広げてから刺し込みます。<br/>
 差し込む際、上から垂直に力をかけると足が曲がる可能性が高いので、片側をある程度差し込んでからもう片側を調整しながら差し込むと上手くいきます。<br/>
 横から見て水平になっているか確認ながらしっかりと差し込みます。<br/>
 Millmaxを使わずに直接取り付ける場合は、この時点でマスキングテープなどでしっかりと固定してから、多めのはんだを流し込んでしっかり固定してください。<br/>
-![IMG_7017](https://github.com/user-attachments/assets/5f861ef2-c253-4738-be6f-531336a1e584)
+<br/>
+同じ要領で他の２つも差し込みます。
 <br/>
 <br/>
 
-同じ要領で他の２つも差し込みます。
-![IMG_7018](https://github.com/user-attachments/assets/d1ad13f0-e899-47e5-9056-484f9c8df659)
+![37371505-1016-422E-8FFE-53DCCAFDED60_1_105_c](https://github.com/user-attachments/assets/27711cb3-f30a-4020-913d-aea81e40a16a) <br/>
+取り付け後はこのようになります。<br/>
 <br/>
 <br/>
+
 Millmaxを使う場合はロータリーエンコーダーは脱着が可能ですが、無理やり外したりすると足が折れてしまう可能性があるため頻繁な差し替えは推奨していません。<br/>
 使い方によってクリック感のないタイプのエンコーダーに切り替えたり、エンコーダーの位置に普通のスイッチが必要になった際取り外せるようにした仕様です。<br/>
 また、使用するエンコーダーノブによっては軸がタイトで無理やり引き抜こうとするとエンコーダー自体もすっぽ抜けてしまう可能性もあるので、注意して取り外しするようにしてください。<br/>
@@ -376,14 +410,25 @@ AZ1UBALLは高さ2.5mmのコンスルーを使って基板に固定しますが�
 <br/>
 <br/>
 <br/>
-![6D746D38-D1F0-493A-B5F5-37F72EFCED9E_1_105_c](https://github.com/user-attachments/assets/e08a0f56-c813-42a5-978a-5430d32cd9d2)\
-![58DC0DC5-51D2-4341-A366-CE6BC40F6838_1_105_c](https://github.com/user-attachments/assets/8244aff5-a5ba-4269-9f74-bfc0dca34d2e)\
+
+![6D746D38-D1F0-493A-B5F5-37F72EFCED9E_1_105_c](https://github.com/user-attachments/assets/e08a0f56-c813-42a5-978a-5430d32cd9d2) <br/>
+
+![58DC0DC5-51D2-4341-A366-CE6BC40F6838_1_105_c](https://github.com/user-attachments/assets/8244aff5-a5ba-4269-9f74-bfc0dca34d2e) <br/>
 
 ”台”の取り付け位置とコンスルー取り付け位置に注意してください。それぞれ”逆”の位置になります。<br/>
 AZ1UBALLはビルドガイドに従って組み立てておいてください。<br/>
 https://github.com/palette-system/az1uball.git<br/>
 
 尚、AZ1UBALLは取り付けなくてもマクロパッド自体は動作しますので必要ない場合は取り付けなくてもOKです。<br/>
+<br/>
+<br/>
+
+![A15033D6-D72B-43E2-932F-A9CADA71EAB5_1_105_c](https://github.com/user-attachments/assets/a49103af-08b4-4af1-bb82-3101559cfed7) <br/>
+基板に装着するとこのような形になります。<br/>
+<br/>
+<br/>
+
+
 
 ### 6.マイコン(RP2040−ZERO)の取り付け
 <br/>
