@@ -39,7 +39,7 @@ https://github.com/Eromis-keeb/hiyokochan_f10_yuugao/blob/651e7ff822fd7b917119c6
 
 部品|個数
 --|--
-若紫 基板(完成)|x1
+夕顔 基板(完成)|x1
 トッププレート（アクリル）|x1
 ミドルプレート上|x1
 ミドルプレート下|x1
@@ -63,7 +63,7 @@ https://github.com/Eromis-keeb/hiyokochan_f10_yuugao/blob/651e7ff822fd7b917119c6
 MXキースイッチ |x10
 MXキーキャップ |x10
 ロータリーエンコーダーノブ（直径17mmくらいまで）|x3
-
+AZ1UBALL |x1(なくても動作します)
 
 
 部品はTALPKEYBOARDさん、遊舎工房さん、秋月電子通商さん、マルツオンラインさんで調達しています。<br/>
