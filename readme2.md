@@ -63,7 +63,7 @@ https://github.com/Eromis-keeb/hiyokochan_f10_yuugao/blob/651e7ff822fd7b917119c6
 MXキースイッチ |x10
 MXキーキャップ |x10
 ロータリーエンコーダーノブ（直径17mmくらいまで）|x3
-AZ1UBALL |x1(なくても動作します)
+AZ1UBALL |x1(なくても動作します)　https://palette-system.booth.pm/items/4202085
 
 
 部品はTALPKEYBOARDさん、遊舎工房さん、秋月電子通商さん、マルツオンラインさんで調達しています。<br/>
